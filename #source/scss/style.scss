@@ -1,0 +1,568 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+@media (max-width: 1300px) {
+  .header {
+    .header-bottom {
+      &__logo {
+        & img {
+          padding: 0px 0px 0px 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .my-container {
+    .header {
+      .header-bottom {
+        .nav-left {
+          & ul {
+            & a {
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 25px;
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .my-container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .my-container {
+    max-width: none;
+  }
+}
+.my-container {
+  min-width: 1400px;
+}
+.header {
+  min-width: 917px;
+  margin: 24px 248px 33px 249px;
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+
+    & div:first-child {
+      max-width: 130px;
+    }
+    & div:nth-child(2) {
+      max-width: 90px;
+      & span {
+        color: #000000;
+        font-family: Bebas;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2.72px;
+        margin: 0px 0px 0px -53px;
+      }
+    }
+    & div:nth-child(3) {
+      max-width: 125px;
+
+      & span {
+        font-family: "PT Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25px;
+        text-transform: uppercase;
+        & a {
+          color: #000000;
+        }
+      }
+      :hover {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+
+    & ul {
+      color: #000000;
+      font-family: PT Sans;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 1px;
+      max-width: 90px;
+      max-height: 20px;
+      & a:first-child {
+        font-family: Bebas;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #000000;
+        &:hover {
+          background-color: #000000;
+          color: #ffffff;
+        }
+      }
+      & a:nth-child(2) {
+        color: #000000;
+        font-family: Bebas;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        margin: 0px 6px;
+
+        &:hover {
+          background-color: #000000;
+          color: #ffffff;
+        }
+      }
+      & a:nth-child(3) {
+        color: #000000;
+        font-family: Bebas;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        &:hover {
+          background-color: #000000;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 30px 0px;
+    &__logo {
+      margin: -20px 0px 0px -160px;
+    }
+
+    .nav-left {
+      & ul {
+        max-width: 260px;
+        margin: 0px 100px 0px 0px;
+        :hover {
+          text-decoration: underline;
+        }
+      }
+      & a {
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      & a:nth-child(2) {
+        margin: 0px 20px;
+      }
+    }
+    .nav-right {
+      & ul {
+        :hover {
+          text-decoration: underline;
+        }
+        & a {
+          color: #000000;
+          font-family: "PT Sans";
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 25px;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+        }
+        & a:nth-child(2) {
+          margin: 0px 20px;
+        }
+      }
+    }
+  }
+}
+
+.sliders {
+  display: flex;
+  max-width: 1366px;
+
+  .sliders-img {
+    margin: 0px auto;
+    &__left {
+      margin: 0px 0px 0px 120px;
+    }
+
+    &__right {
+      position: relative;
+      margin: 0px 197px 0px 0px;
+
+      & span {
+        color: #fffffe;
+        font-family: Bebas;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        position: absolute;
+        top: 318px;
+        left: 229px;
+        letter-spacing: 1.5px;
+      }
+      & button {
+        min-width: 155px;
+        min-height: 50px;
+        background-color: #fff;
+        position: absolute;
+        top: 300px;
+        left: 60px;
+      }
+    }
+
+    &__title {
+      color: #ffffff;
+      font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 50px;
+      letter-spacing: 5px;
+      position: absolute;
+      top: 82px;
+      left: 62px;
+
+      text-transform: uppercase;
+    }
+
+    &__text {
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      position: absolute;
+      top: 206px;
+      left: 59px;
+    }
+  }
+}
+
+.content {
+  margin: 0px auto;
+  .top-blocks {
+    display: flex;
+    max-width: 880px;
+    margin: 75px 363px;
+    & div {
+      & button {
+        min-width: 155px;
+        min-height: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Bebas;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      & span {
+        min-width: 92px;
+        min-height: 16px;
+        color: #000000;
+        font-family: Bebas;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        & a {
+          color: #000000;
+        }
+      }
+    }
+  }
+  .title {
+    color: #000000;
+    font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 20px 55px 25px 0px;
+  }
+  .text {
+    max-width: 175px;
+    max-height: 64px;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px 0px 46px 0px;
+  }
+  .bottom-block {
+    display: flex;
+    margin: 0px 0px 60px 98px;
+    &__leftimg {
+      position: relative;
+    }
+
+    &__title {
+      color: #ffffff;
+      font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      position: absolute;
+      top: 71px;
+      left: 190px;
+    }
+
+    &__rightimg {
+      max-width: 780px;
+      max-height: 609px;
+    }
+  }
+
+  .about {
+    .about-part {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__container {
+        position: relative;
+        width: 505px;
+        margin: 0px auto;
+      }
+    }
+    .heading {
+      position: absolute;
+      top: 0px;
+      left: 112px;
+      color: #000000;
+      font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+    }
+    .lower {
+      &__text {
+        min-width: 288px;
+        min-height: 39px;
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin: -60px 29px 29px 112px;
+      }
+    }
+  }
+
+  .contacts {
+    .contacts-flex__container {
+      justify-content: space-around;
+      position: relative;
+    }
+    &__gps {
+      position: absolute;
+      top: 0px;
+      left: 245px;
+
+      & span {
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 0px 0px 0px 10px;
+      }
+    }
+    &__telephone {
+      position: absolute;
+      left: 245px;
+      top: 53px;
+
+      & span {
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 0px 0px 0px 10px;
+      }
+    }
+    &__email {
+      position: absolute;
+      left: 990px;
+
+      & span {
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 0px 0px 0px 10px;
+      }
+    }
+
+    .contacts-title {
+      color: #000000;
+      font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 120px 0px 39px 627px;
+    }
+    .contacts-4img {
+      position: absolute;
+      top: 53px;
+      left: 992px;
+    }
+    .fa {
+      padding: 7px;
+      font-size: 18px;
+      min-width: 30px;
+      min-height: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .fa-facebook {
+      background: #3b5998;
+      color: white;
+      margin: 0px 19px 0px 0px;
+    }
+    .fa-twitter {
+      background: #55acee;
+      color: white;
+      margin: 0px 19px 0px 0px;
+    }
+    .fa-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      margin: 0px 19px 0px 0px;
+    }
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    .contacts-bottom {
+      display: flex;
+      margin: 200px 740px 0px 118px;
+
+      &__map {
+        min-width: 100%;
+      }
+
+      &mail {
+        margin: 0px 0px 0px 125px;
+        position: relative;
+
+        & span {
+          color: #ffffff;
+          font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 25px;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          position: absolute;
+          top: 54px;
+          left: 50px;
+        }
+        &__input1 {
+          min-width: 373px;
+          min-height: 51px;
+          border: 2px solid #959595;
+          background-color: #252525;
+          position: absolute;
+          top: 94px;
+          left: 50px;
+          padding: 0px 15px;
+        }
+        &__input2 {
+          min-width: 373px;
+          min-height: 51px;
+          border: 2px solid #959595;
+          background-color: #252525;
+          position: absolute;
+          top: 164px;
+          left: 50px;
+          padding: 0px 15px;
+        }
+        &__textarea {
+          min-width: 373px;
+          min-height: 100px;
+          border: 2px solid #959595;
+          background-color: #252525;
+          position: absolute;
+          top: 234px;
+          left: 50px;
+          padding: 10px 30px 50px 15px;
+        }
+        & button {
+          min-width: 155px;
+          min-height: 50px;
+          background: #ffffff;
+          position: absolute;
+          top: 380px;
+          left: 54px;
+          border: solid 1px transparent;
+          border-radius: 4px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+    :focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+    :focus::-moz-placeholder {
+      color: transparent;
+    }
+    :focus:-moz-placeholder {
+      color: transparent;
+    }
+    :focus:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}
+.footer {
+  min-width: 1486px;
+  min-height: 100px;
+  background-color: fff;
+  margin: 0px 100px 0px 116px;
+  flex: 0 0 auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px 0px 0px;
+  margin: 0px auto;
+  &__text {
+    color: #4d4d4d;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
